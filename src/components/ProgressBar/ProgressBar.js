@@ -22,7 +22,7 @@ const ProgressBar = ({ value, size }) => {
   styles["--border-radius"] = value > 99 ? "8px" : "8px 0px 0px 8px"; // need to set to 4 if medium/small
 
   return (
-    <ProgressWrapper value={value} size={size} style={styles}>
+    <ProgressWrapper value={value} size={size} style={{ styles }}>
       <progress max="100" value={value} size={size}>
         {value} %
       </progress>
